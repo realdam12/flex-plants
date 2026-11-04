@@ -1,13 +1,290 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #333;
+    background-color: #f6fbf4;
+}
+
+a {
     text-decoration: none;
 }
 
-ul{
+ul,
+ol {
     list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Do Hyeon", sans-serif;
+}
+
+header {
+    padding: 16px 40px;
+    display: flex;
+    background-color: #2D6A4F;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.menu a:hover {
+    color: #FFD166
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 32px;
+    align-items: center;
+    min-width: 500px;
+    height: 280px;
+    background-color: #d8f3dc;
+}
+
+.sub {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #2D6A4F;
+    font-size: 13px;
+}
+
+.hero h2 {
+    color: #2D6A4F;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+.btn-wrap {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: block;
+    background-color: #2D6A4F;
+    padding: 10px 20px;
+    color: #fff;
+    border: #2D6A4F solid 1px;
+}
+
+.line {
+    background-color: #fff;
+    color: #2D6A4F;
+}
+
+.btn:hover {
+    background-color: #1B4332;
+}
+
+h2 {
+    color: #2D6A4F;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.card {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 8px;
+    border: 1px solid #D8F3DC;
+}
+
+.card:hover {
+    border: 2px solid #2D6A4F;
+}
+
+.icon {
+    font-size: 48px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 22px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.price button {
+    padding: 6px 14px;
+    background-color: #F4A261;
+    border: none;
+    color: #fff;
+}
+
+.price button:hover {
+    background-color: #E76F51;
+}
+
+#plants h2,
+#care h2,
+#shop h2,
+#news h2 {
+    margin: 30px auto 10px auto;
+}
+
+.step {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.step li {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.num {
+    background-color: #2D6A4F;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    align-content: center;
+}
+
+.tags {
+    margin-top: 15px;
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.tags li {
+    display: block;
+    background-color: #D8F3DC;
+    padding: 5px 15px;
+    color: #2D6A4F;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 150px;
+    gap: 16px;
+}
+
+.gallery li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #fff;
+    border: 1px solid #D8F3DC;
+}
+
+.gallery li:hover {
+    border: 1px solid #2D6A4F;
+}
+
+.gallery li:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #2D6A4F;
+    color: #fff;
+}
+
+.emoji {
+    font-size: 40px;
+}
+
+.first {
+    font-size: 80px;
+}
+
+.gallery h3 {
+    font-size: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+}
+
+select {
+    padding: 8px;
+    text-align: left;
+    background-color: #eee;
+}
+
+.submit {
+    padding: 8px 16px;
+    background-color: #2D6A4F;
+    border: none;
+    color: #fff;
+}
+
+footer {
+    background-color: #1B4332;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    gap: 22px;
+}
+
+footer a {
+    color: #fff;
 }
