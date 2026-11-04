@@ -127,6 +127,7 @@ h2 {
     padding: 24px;
     gap: 8px;
     border: 1px solid #D8F3DC;
+    position: relative;
 }
 
 .card:hover {
@@ -160,7 +161,27 @@ h2 {
     background-color: #E76F51;
 }
 
-#plants h2,
+.best {
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    top: -15px;
+    left: 5px;
+}
+.t1{
+    background-color: #FFD166;
+}
+.t2{
+    background-color: #ccc;
+}
+.t3{
+    background-color: #ee947e;
+}
+#plants h2{
+    margin: 30px auto 20px auto;
+}
 #care h2,
 #shop h2,
 #news h2 {
@@ -306,3 +327,4 @@ footer a {
     height: 70px;
     border-radius: 100%;
 }
+
