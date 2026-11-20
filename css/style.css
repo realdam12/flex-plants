@@ -71,7 +71,7 @@ main {
     margin-top: calc(67px + 30px);
     align-items: center;
     min-width: 500px;
-    height: 280px;
+    height: 50vh;
     background-color: #d8f3dc;
 }
 
